@@ -1,0 +1,37 @@
+# --- System / OS Files ---
+.DS_Store
+Thumbs.db
+
+# --- Essential Security (Never Upload These) ---
+.env
+.env.backup
+.env.production
+auth.json
+
+# --- Dependencies (Large & Rebuildable) ---
+/node_modules
+/vendor
+
+# --- Build Assets (Vite/Compiled Files) ---
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+mix-manifest.json
+package-lock.json
+# Note: Keep composer.lock for PHP consistency
+
+# --- Laravel Specifics ---
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/testing/*
+/storage/framework/views/*
+/storage/logs/*
+!/storage/framework/cache/data/.gitignore
+!/storage/framework/sessions/.gitignore
+!/storage/framework/testing/.gitignore
+!/storage/framework/views/.gitignore
+!/storage/logs/.gitignore
+
+# --- Development Tools (IDE Settings) ---
+.
